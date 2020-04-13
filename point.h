@@ -12,6 +12,8 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
+#include <math.h>
+
 typedef struct
 {
   int x;
@@ -21,6 +23,8 @@ typedef struct
 #define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
 #define FOR_LOOP(startAt, endAt) for (int i = startAt; i < endAt; i++)
 #define MAX_DISTANCE 1000000.00
+#define SQUARE(number) pow(number, 2)
+#define SQUARE_ROOT(number) sqrt(number)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
 double distance_between_two_points(Point point1, Point point2);
