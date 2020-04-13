@@ -20,5 +20,6 @@ typedef struct
 
 #define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
 #define FOR_LOOP(startAt, endAt) for (int i = startAt; i < endAt; i++)
+#define MAX_DISTANCE 1000000.00
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
