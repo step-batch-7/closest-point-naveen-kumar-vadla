@@ -19,5 +19,6 @@ typedef struct
 } Point;
 
 #define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
+#define FOR_LOOP(startAt, endAt) for (int i = startAt; i < endAt; i++)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
