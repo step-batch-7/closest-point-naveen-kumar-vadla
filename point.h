@@ -19,6 +19,7 @@ typedef struct
   int x;
   int y;
 } Point;
+typedef double distance;
 
 #define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
 #define FOR_LOOP(startAt, endAt) for (int i = startAt; i < endAt; i++)
@@ -27,4 +28,4 @@ typedef struct
 #define SQUARE_ROOT(number) sqrt(number)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
-double distance_between_two_points(Point point1, Point point2);
+distance distance_between_two_points(Point point1, Point point2);
