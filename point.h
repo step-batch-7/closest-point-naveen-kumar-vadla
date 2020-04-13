@@ -23,3 +23,4 @@ typedef struct
 #define MAX_DISTANCE 1000000.00
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
+double distance_between_two_points(Point point1, Point point2);
