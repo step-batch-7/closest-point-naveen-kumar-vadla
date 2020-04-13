@@ -18,4 +18,6 @@ typedef struct
   int y;
 } Point;
 
+#define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
+
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
