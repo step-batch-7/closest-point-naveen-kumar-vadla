@@ -23,7 +23,7 @@ typedef double distance;
 
 #define ARRAY_SIZE(array) (sizeof(array) / sizeof(*array))
 #define FOR_LOOP(startAt, endAt) for (int i = startAt; i < endAt; i++)
-#define MAX_DISTANCE 1000000.00
+#define MAX_DISTANCE 10000000000.00
 #define SQUARE(number) pow(number, 2)
 #define SQUARE_ROOT(number) sqrt(number)
 
