@@ -7,8 +7,6 @@ distance distance_between_two_points(Point point1, Point point2)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location)
 {
-  closest_food_location->x = current_location.x;
-  closest_food_location->y = current_location.y;
   distance min_distance = MAX_DISTANCE;
   FOR_LOOP(0, points_length)
   {
@@ -16,8 +14,7 @@ void get_closest_food(Point food_points[], int points_length, Point current_loca
     if (distance_to_food < min_distance)
     {
       min_distance = distance_to_food;
-      closest_food_location->x = food_points[i].x;
-      closest_food_location->y = food_points[i].y;
+      *closest_food_location = food_points[i];
     }
   }
 }
